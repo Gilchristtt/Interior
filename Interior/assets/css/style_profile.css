@@ -1,0 +1,53 @@
+.navbar-default {
+    background-color: black;
+    border: none;
+    position: fixed;
+    width: 100vw; /* Set navbar width to 100vw (100% of viewport width) */
+    left: 0; /* Align navbar to the left */
+    top: 0;
+    z-index: 1000;
+    padding-left: 200px;
+}
+
+
+.container {
+    padding-left: 0; /* Remove padding from the container */
+    padding-right: 0; /* Remove padding from the container */
+}
+
+.navbar-nav > li {
+    display: inline-block; /* Display list items in a row */
+    margin-right: 10px; /* Add some space between list items */
+    margin-left: 30px;
+}
+
+.navbar-nav > li > a {
+    color: white; /* Set text color to white */
+    text-transform: uppercase; /* Transform text to uppercase */
+    font-family: 'Raleway', sans-serif; /* Set font */
+    padding-right: 15px; /* Move text to the right */
+    position: relative; /* Set position to relative for positioning dots */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    font-size: small;
+}
+
+.navbar-nav > li > a:hover {
+    color: #ffcc33; /* Change text color to yellow on hover */
+}
+
+.navbar-nav > li > a::before {
+    content: '\2022'; /* Add bullet point */
+    color: #ffcc33; /* Set color of bullet point */
+    font-weight: bold; /* Make bullet point bold */
+    margin-right: 5px; /* Add some space between bullet point and text */
+    position: absolute; /* Position bullet point absolutely */
+    left: -15px; /* Adjust position of bullet point */
+    top: 50%; /* Adjust position of bullet point */
+    transform: translateY(-50%); /* Adjust position of bullet point */
+}
+
+.navbar-header {
+    margin-left: -15px; /* Adjust margin to align with navbar content */
+    margin-right: -15px; /* Adjust margin to align with navbar content */
+}
